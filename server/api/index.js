@@ -21,6 +21,7 @@ router.get('/tenants', (req, res, next) => {
 })
 
 router.post('/tenants', (req, res, next) => {
+  console.log(req.body);
   db.tenant.create({
     name: req.body.name,
     created_at: moment().format('YYYY-MM-DD HH:mm:ss Z'),

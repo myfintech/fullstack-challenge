@@ -3,8 +3,8 @@ module.exports = (sequelize, DataTypes) => {
   var tenant = sequelize.define('tenant', {
     id: {
         type: DataTypes.UUID,
-        autoIncrement: true,
-        primaryKey: true
+        primaryKey: true,
+        defaultValue: DataTypes.UUIDV4
     },
     name: DataTypes.STRING(256),
     created_at: DataTypes.DATE,
