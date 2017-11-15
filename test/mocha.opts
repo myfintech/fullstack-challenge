@@ -1,0 +1,5 @@
+--require mocha-clean
+--require ./test/_init.js
+--full-trace
+--recursive
+--timeout 20000

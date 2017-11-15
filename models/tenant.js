@@ -6,10 +6,20 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
         defaultValue: DataTypes.UUIDV4
     },
-    name: DataTypes.STRING(256),
-    created_at: DataTypes.DATE,
-    updated_at: DataTypes.DATE
+    name: {
+      field: 'name',
+      type: DataTypes.STRING(256)
+    },
+    createdAt: {
+      field: 'created_at',
+      type: DataTypes.DATE
+    },
+    updatedAt: {
+      field: 'updated_at',
+      type: DataTypes.DATE,
+    }
   }, {
+    timestamps: true,
     classMethods: {
       associate: function(models) {
         // associations can be defined here
