@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "fullstack_demo",
+    "password": "fullstack_demo",
+    "database": "fullstack_demo",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "fullstack_demo",
+    "password": "fullstack_demo",
+    "database": "fullstack_demo",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "fullstack_demo",
+    "password": "fullstack_demo",
+    "database": "fullstack_demo",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
