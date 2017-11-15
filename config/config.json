@@ -1,15 +1,15 @@
 {
   "development": {
-    "username": "fullstack_demo",
-    "password": "fullstack_demo",
-    "database": "fullstack_demo",
+    "username": "fullstack_challenge",
+    "password": "fullstack_challenge",
+    "database": "fullstack_challenge",
     "host": "localhost",
     "dialect": "postgres"
   },
   "test": {
-    "username": "fullstack_demo",
-    "password": "fullstack_demo",
-    "database": "fullstack_demo",
+    "username": "fullstack_challenge",
+    "password": "fullstack_challenge",
+    "database": "fullstack_challenge",
     "host": "localhost",
     "dialect": "postgres"
   },
