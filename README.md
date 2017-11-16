@@ -17,3 +17,18 @@ Then create a database:
 Create a test database so that you can run the tests:
 
 `createdb -O fullstack_challenge fullstack_challenge_test`
+
+
+## Running tests
+
+To run the test, make sure you have created a test db by running:
+
+`createdb -O fullstack_challenge fullstack_challenge_test`
+
+and then that you have run the test migrations with:
+
+`yarn migrate:test`
+
+and then run:
+
+`yarn test`
