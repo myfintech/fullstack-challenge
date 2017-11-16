@@ -9,14 +9,14 @@
   "test": {
     "username": "fullstack_challenge",
     "password": "fullstack_challenge",
-    "database": "fullstack_challenge",
+    "database": "fullstack_challenge_test",
     "host": "localhost",
     "dialect": "postgres"
   },
   "production": {
-    "username": "fullstack_demo",
-    "password": "fullstack_demo",
-    "database": "fullstack_demo",
+    "username": "fullstack_challenge",
+    "password": "fullstack_challenge",
+    "database": "fullstack_challenge",
     "host": "localhost",
     "dialect": "postgres"
   }
