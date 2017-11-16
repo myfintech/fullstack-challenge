@@ -4,15 +4,6 @@ const db = require('../../models');
 const moment = require('moment');
 const Promise = require('bluebird');
 
-// returns all cups?
-router.get('/', (req, res, next) => {
-  db.cups.findAll()
-  .then(cup => {
-    res.status(200).json(cup);
-  })
-  .catch(console.error);
-});
-
 //returns all tenants?
 router.get('/tenants', (req, res, next) => {
   db.tenant.findAll()
