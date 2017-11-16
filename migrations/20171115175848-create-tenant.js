@@ -10,10 +10,12 @@ module.exports = {
         type: Sequelize.TEXT(256)
       },
       created_at: {
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        allowNull: false
       },
       updated_at: {
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        allowNull: false
       }
     });
   },
