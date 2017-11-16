@@ -4,7 +4,7 @@ const db = require('../../models');
 const moment = require('moment');
 const Promise = require('bluebird');
 
-
+// returns all cups?
 router.get('/', (req, res, next) => {
   db.cups.findAll()
   .then(cup => {
@@ -13,6 +13,7 @@ router.get('/', (req, res, next) => {
   .catch(console.error);
 });
 
+//returns all tenants?
 router.get('/tenants', (req, res, next) => {
   db.tenant.findAll()
   .then(tenant => {
@@ -21,6 +22,7 @@ router.get('/tenants', (req, res, next) => {
   .catch(console.error);
 })
 
+//add new tenant
 router.post('/tenants', (req, res, next) => {
   Promise.coroutine(function* () {
     const tenant = yield db.tenant.create(req.body);
@@ -29,6 +31,7 @@ router.post('/tenants', (req, res, next) => {
   .catch(next);
 });
 
+//get specific tenant by id
 router.get('tenants/:id', (req, res, next) => {
   db.tenant.findById(req.params.id).then(tenant => {
     res.status(200).json(tenant);
@@ -36,6 +39,7 @@ router.get('tenants/:id', (req, res, next) => {
   .catch(console.error);
 })
 
+//update tenant name and timestamp
 router.put('tenants/:id', (req, res, next) => {
   db.tenant.update({
     name: req.body.name,
@@ -47,6 +51,7 @@ router.put('tenants/:id', (req, res, next) => {
   .catch(console.error);
 })
 
+//remove a tenant from db
 router.delete('tenants/:id', (req, res, next) => {
   db.tenant.destroy({
     where: { id: req.params.id }
